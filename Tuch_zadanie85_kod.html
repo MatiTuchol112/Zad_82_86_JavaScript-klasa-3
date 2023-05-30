@@ -1,0 +1,46 @@
+<textarea cols="55" rows="45">
+<!DOCTYPE html>
+<html lang="pl-PL">
+<html>
+<head>
+<meta charset="utf-8">
+<title> Mateusz Tuchowski - Zadanie 85</title>
+<script type="text/javascript">
+    function DzienTygodnia() {
+        var dzis = new Date();
+        var DzienTygodnia = dzis.getDay();
+        switch (DzienTygodnia) {
+            case 0:
+                document.write("Dzień:niedziela");
+                break;
+            case 1:
+                document.write("Dzień:poniedziałek.");
+                break;
+            case 2:
+                document.write("Dzień:wtorek.");
+                break;
+            case 3:
+                document.write("Dzień:środa.");
+                break;
+            case 4:
+                document.write("Dzień:czwartek.");
+                break;
+            case 5:
+                document.write("Dzień:piątek.");
+                break;
+            case 6:
+                document.write("Dzień:sobota.");
+                break;
+            default:
+                document.write("");
+        }
+    }
+</script>
+</head>
+<body>
+    <script type="text/javascript">
+        DzienTygodnia();
+    </script>
+</body>
+</html>
+</textarea>

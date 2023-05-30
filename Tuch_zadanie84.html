@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<html>
+<head>
+<meta charset="utf-8">
+<title> Mateusz Tuchowski - Zadanie 84</title>
+<script>
+var czas = 0;
+function tuchowski_start()
+    {
+    var czas_stopera = document.getElementById("czas_stopera");
+    start_tuc = new Date();
+    poczatek_tuc = start_tuc.getTime()
+    }
+function tuchowski_stop() 
+    {
+    stop_tuc = new Date();
+    koniec_tuc = stop_tuc.getTime()
+    roznica_tuc = koniec_tuc - poczatek_tuc;
+    czas_stopera.innerHTML = roznica_tuc/1000+" s";
+    } 
+</script>
+</head>
+<body>
+<script>
+dzis_tuc = new Date();
+document.write("Aktualny czas : ",dzis_tuc.getHours(),":",dzis_tuc.getMinutes());
+</script>
+<div style="border:2px black solid;width: 7%;">
+<p id="czas_stopera">0.000</p>
+</div>
+<input type="button" name="Button1" value="START stoper" onclick="tuchowski_start()">
+<input type="button" name="Button2" value="STOP stoper" onclick="tuchowski_stop()">
+</body>
+</html>
