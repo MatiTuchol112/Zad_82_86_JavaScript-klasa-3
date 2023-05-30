@@ -1,1 +1,5 @@
-# Zad_82_86_JavaScript-klasa-3
+# JavaScript
+
+strona do ćwiczeń
+
+link do strony: 
