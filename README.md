@@ -1,0 +1,1 @@
+# Zad_82_86_JavaScript-klasa-3
