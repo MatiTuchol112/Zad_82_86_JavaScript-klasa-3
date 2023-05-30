@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<html>
+<head>
+<meta charset="utf-8">
+<title> Mateusz Tuchowski - Zadanie 86</title>
+<script language="JavaScript">
+</script>
+</head>
+<body>
+    <p id="akcja1_tuc"></p>
+    <p id="akcja2_tuc"></p>
+    <p id="akcja3_tuc"></p>
+    <script>      
+        var data = new Date();
+        function OstatniaModyfikacja_tuc()
+        {
+            document.getElementById("akcja1_tuc").innerHTML = "Ostatnia modyfikacja to: "+document.lastModified;        
+        }
+        function AktualnaData_tuc()
+        { 
+            document.getElementById("akcja2_tuc").innerHTML = "Aktualna data to: "+(data.getMonth()+1)+"."+data.getDate()+"."+data.getFullYear();       
+        }
+        function AktualnaGodzina_tuc()
+        {
+            document.getElementById("akcja3_tuc").innerHTML="Aktualna godzina to: "+data.getHours()+":"+data.getMinutes();        
+        }       
+    </script>
+    <div>
+    <form>      
+        <a onclick="OstatniaModyfikacja_tuc(' ')">
+        <img src="Przycisk1_tuc.png" 
+        alt="Przycisk1" 
+        border="0"
+        height="150"
+        width="150"
+        onmouseover="this.src ='Przycisk2_tuc.png'"
+        onmouseout="this.src ='Przycisk1_tuc.png'" /> 
+        </a>       
+    </form>
+    <table>       
+    <tr id="przycisk1_tuc"></tr>     
+    </table>
+    <form>
+        <a onclick="AktualnaData_tuc(' ')">
+        <img src="Przycisk3_tuc.png" 
+        alt="Przycisk2" 
+        border="0" 
+        height="150"
+        width="150"
+        onmouseover="this.src ='Przycisk4_tuc.png'" 
+        onmouseout="this.src ='Przycisk3_tuc.png'" /> 
+        </a>        
+    </form>
+    <table>       
+        <tr id="AktualnaData_tuc"></tr>        
+    </table>
+    <form>
+        <a onclick="AktualnaGodzina_tuc(' ')"> 
+        <img src="Przycisk5_tuc.png" 
+        alt="Przycisk3"
+         border="0" 
+         height="150"
+         width="150"
+        onmouseover="this.src ='Przycisk6_tuc.png'"
+        onmouseout="this.src ='Przycisk5_tuc.png'" />
+        </a>       
+    </form>   
+    <table>       
+        <tr id="AktualnaGodzina_tuc"></tr>        
+    </table>
+</div>
+</body>
+</html>
